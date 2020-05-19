@@ -1,2 +1,0 @@
-# MyRepo
-Chandu Dani Repo
