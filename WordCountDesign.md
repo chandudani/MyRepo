@@ -3,6 +3,7 @@
 ## Logical archtitecture diagram
 <img src="./WordCount.svg">
 
+##
 ## Design Consideations
 
 1. What factors do you have to take into consideration? What tradeoffs do you make?
