@@ -7,7 +7,9 @@
 ## Design Consideations
 
 1. What factors do you have to take into consideration? What tradeoffs do you make?
+	- Given large volume need to do parallel processing of word count.
 2. How do you handle such a huge volume of data?
+	- Partioned the books in multiple blob containers/buckets  
 3. What components such a platform would have?
 4. How would those components interact with each other to solve your problems?
 5. How would the programmer and user interact with it? What kind of abstractions would you build?
