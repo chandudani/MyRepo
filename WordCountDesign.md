@@ -6,7 +6,7 @@
 ##
 ## Design Consideations
 
-1. What factors do you have to take into consideration? What tradeoffs do you make?
+1. **What factors do you have to take into consideration? What tradeoffs do you make?**
 	- Given large volume need to do parallel processing of word count.
 2. How do you handle such a huge volume of data?
 	- Partioned the books in multiple blob containers/buckets  
