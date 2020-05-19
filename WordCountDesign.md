@@ -2,3 +2,5 @@
 
 ## Logical archtitecture diagram
 
+![Alt text](./WordCount.svg)
+<img src="./WordCount.svg">
