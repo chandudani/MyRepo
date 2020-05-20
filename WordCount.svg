@@ -790,15 +790,14 @@
 			<text x="8.78" y="597.6" class="st13" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Data Ingestion</text>		</g>
 		<g id="shape69-150" v:mID="69" v:groupContext="shape" transform="translate(335.25,-513)">
 			<title>Sheet.69</title>
-			<desc>HDInsight Hadoop MapReduce to pair key and count of TopN words</desc>
+			<desc>Hadoop MapReduce to pair key and count of TopN words</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="45" cy="594" width="90" height="36"/>
 			<rect x="0" y="576" width="90" height="36" class="st12"/>
-			<text x="20.6" y="561.6" class="st13" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/><v:newlineChar/>HDInsight<v:newlineChar/><v:newlineChar/><tspan
-						x="25.36" dy="2.4em" class="st5">Hadoop<v:newlineChar/></tspan><tspan x="8.54" dy="1.2em" class="st5">MapReduce to </tspan><tspan
-						x="14.36" dy="1.2em" class="st5">pair key and </tspan><tspan x="9.54" dy="1.2em" class="st5">count of TopN </tspan><tspan
-						x="29.56" dy="1.2em" class="st5">words  </tspan>  </text>		</g>
-		<g id="shape73-158" v:mID="73" v:groupContext="shape" v:layerMember="2" transform="translate(459.265,-165.6)">
+			<text x="25.36" y="568.8" class="st13" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Hadoop<v:newlineChar/><tspan
+						x="8.54" dy="1.2em" class="st5">MapReduce to </tspan><tspan x="14.36" dy="1.2em" class="st5">pair key and </tspan><tspan
+						x="9.54" dy="1.2em" class="st5">count of TopN </tspan><tspan x="29.56" dy="1.2em" class="st5">words  </tspan>  </text>		</g>
+		<g id="shape73-157" v:mID="73" v:groupContext="shape" v:layerMember="2" transform="translate(459.265,-165.6)">
 			<title>Document.31</title>
 			<desc>TopN word count</desc>
 			<v:custProps>
@@ -830,7 +829,7 @@
 						 0 609.41 Z" class="st9"/>
 			<text x="7.83" y="591.86" class="st10" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>TopN <tspan x="8.04"
 						dy="1.2em" class="st5">word </tspan><tspan x="7.24" dy="1.2em" class="st5">count</tspan></text>		</g>
-		<g id="shape74-163" v:mID="74" v:groupContext="shape" v:layerMember="2" transform="translate(459.265,-258.3)">
+		<g id="shape74-162" v:mID="74" v:groupContext="shape" v:layerMember="2" transform="translate(459.265,-258.3)">
 			<title>Document.74</title>
 			<desc>TopN word count</desc>
 			<v:custProps>
@@ -862,7 +861,7 @@
 						 0 609.41 Z" class="st9"/>
 			<text x="7.83" y="591.86" class="st10" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>TopN <tspan x="8.04"
 						dy="1.2em" class="st5">word </tspan><tspan x="7.24" dy="1.2em" class="st5">count</tspan></text>		</g>
-		<g id="shape75-168" v:mID="75" v:groupContext="shape" v:layerMember="2" transform="translate(459.265,-354.15)">
+		<g id="shape75-167" v:mID="75" v:groupContext="shape" v:layerMember="2" transform="translate(459.265,-354.15)">
 			<title>Document.75</title>
 			<desc>TopN word count</desc>
 			<v:custProps>
@@ -894,7 +893,7 @@
 						 0 609.41 Z" class="st9"/>
 			<text x="7.83" y="591.86" class="st10" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>TopN <tspan x="8.04"
 						dy="1.2em" class="st5">word </tspan><tspan x="7.24" dy="1.2em" class="st5">count</tspan></text>		</g>
-		<g id="shape76-173" v:mID="76" v:groupContext="shape" v:layerMember="2" transform="translate(459.265,-454.5)">
+		<g id="shape76-172" v:mID="76" v:groupContext="shape" v:layerMember="2" transform="translate(459.265,-454.5)">
 			<title>Document.76</title>
 			<desc>TopN word count</desc>
 			<v:custProps>
@@ -926,39 +925,39 @@
 						 0 609.41 Z" class="st9"/>
 			<text x="7.83" y="591.86" class="st10" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>TopN <tspan x="8.04"
 						dy="1.2em" class="st5">word </tspan><tspan x="7.24" dy="1.2em" class="st5">count</tspan></text>		</g>
-		<g id="shape79-178" v:mID="79" v:groupContext="shape" v:layerMember="1" transform="translate(309.871,-453.64)">
+		<g id="shape79-177" v:mID="79" v:groupContext="shape" v:layerMember="1" transform="translate(309.871,-453.64)">
 			<title>Dynamic connector.79</title>
 			<path d="M0 603.27 L26.11 602.83" class="st11"/>
 		</g>
-		<g id="shape80-183" v:mID="80" v:groupContext="shape" v:layerMember="1" transform="translate(409.696,-455.438)">
+		<g id="shape80-182" v:mID="80" v:groupContext="shape" v:layerMember="1" transform="translate(409.696,-455.438)">
 			<title>Dynamic connector.80</title>
 			<path d="M0 603.41 L43.53 602.69" class="st11"/>
 		</g>
-		<g id="shape81-188" v:mID="81" v:groupContext="shape" v:layerMember="1" transform="translate(279.629,-374.115)">
+		<g id="shape81-187" v:mID="81" v:groupContext="shape" v:layerMember="1" transform="translate(279.629,-374.115)">
 			<title>Dynamic connector.81</title>
 			<path d="M0 620.71 L56.34 621.23" class="st11"/>
 		</g>
-		<g id="shape82-193" v:mID="82" v:groupContext="shape" v:layerMember="1" transform="translate(398.25,-355.5)">
+		<g id="shape82-192" v:mID="82" v:groupContext="shape" v:layerMember="1" transform="translate(398.25,-355.5)">
 			<title>Dynamic connector.82</title>
 			<path d="M0 603 L54.97 603" class="st11"/>
 		</g>
-		<g id="shape83-198" v:mID="83" v:groupContext="shape" v:layerMember="1" transform="translate(295.114,-276.584)">
+		<g id="shape83-197" v:mID="83" v:groupContext="shape" v:layerMember="1" transform="translate(295.114,-276.584)">
 			<title>Dynamic connector.83</title>
 			<path d="M0 620.83 L32.29 621.11" class="st11"/>
 		</g>
-		<g id="shape84-203" v:mID="84" v:groupContext="shape" v:layerMember="1" transform="translate(409.691,-259.375)">
+		<g id="shape84-202" v:mID="84" v:groupContext="shape" v:layerMember="1" transform="translate(409.691,-259.375)">
 			<title>Dynamic connector.84</title>
 			<path d="M0 603.27 L43.53 602.79" class="st11"/>
 		</g>
-		<g id="shape85-208" v:mID="85" v:groupContext="shape" v:layerMember="1" transform="translate(296.918,-184.334)">
+		<g id="shape85-207" v:mID="85" v:groupContext="shape" v:layerMember="1" transform="translate(296.918,-184.334)">
 			<title>Dynamic connector.85</title>
 			<path d="M0 620.83 L32.29 621.11" class="st11"/>
 		</g>
-		<g id="shape86-213" v:mID="86" v:groupContext="shape" v:layerMember="1" transform="translate(409.686,-166.95)">
+		<g id="shape86-212" v:mID="86" v:groupContext="shape" v:layerMember="1" transform="translate(409.686,-166.95)">
 			<title>Dynamic connector.86</title>
 			<path d="M0 603 L43.54 603" class="st11"/>
 		</g>
-		<g id="group87-218" transform="translate(537.75,-294.75)" v:mID="87" v:groupContext="group">
+		<g id="group87-217" transform="translate(537.75,-294.75)" v:mID="87" v:groupContext="group">
 			<v:custProps>
 				<v:cp v:nameU="AssetNumber" v:lbl="Asset Number" v:prompt="" v:type="0" v:format="" v:sortKey="Asset"
 						v:invis="false" v:ask="false" v:langID="1033" v:cal="0"/>
@@ -1008,13 +1007,13 @@
 				<v:ud v:nameU="visLegendShape" v:prompt="" v:val="VT0(2):26"/>
 			</v:userDefs>
 			<title>Data Pipe.87</title>
-			<g id="shape88-219" v:mID="88" v:groupContext="shape" transform="translate(0,-28.2312)">
+			<g id="shape88-218" v:mID="88" v:groupContext="shape" transform="translate(0,-28.2312)">
 				<title>Sheet.88</title>
 				<path d="M76.5 612 C73.95 611.77 71.92 608.4 71.92 604.25 C71.92 599.96 73.82 596.46 76.5 596.46 L5.94 596.46 C2.66
 							 596.5 0 599.96 0 604.23 C0 608.5 2.66 611.96 5.94 612 L5.94 612 L76.5 612 Z" class="st3"/>
 			</g>
 		</g>
-		<g id="shape89-221" v:mID="89" v:groupContext="shape" transform="translate(431.007,-504)">
+		<g id="shape89-220" v:mID="89" v:groupContext="shape" transform="translate(431.007,-504)">
 			<title>Sheet.89</title>
 			<desc>Intermediate Results (Blob)</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
@@ -1022,54 +1021,53 @@
 			<rect x="0" y="576" width="90" height="36" class="st12"/>
 			<text x="12.29" y="583.2" class="st13" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Intermediate <tspan
 						x="27.04" dy="1.2em" class="st5">Results<v:newlineChar/></tspan><tspan x="29.98" dy="1.2em" class="st5">(Blob)</tspan></text>		</g>
-		<g id="shape90-226" v:mID="90" v:groupContext="shape" v:layerMember="1" transform="translate(492.75,-464.85)">
+		<g id="shape90-225" v:mID="90" v:groupContext="shape" v:layerMember="1" transform="translate(492.75,-464.85)">
 			<title>Dynamic connector.90</title>
 			<path d="M0 612 L45.21 738.16" class="st11"/>
 		</g>
-		<g id="shape91-231" v:mID="91" v:groupContext="shape" v:layerMember="1" transform="translate(492.75,-364.5)">
+		<g id="shape91-230" v:mID="91" v:groupContext="shape" v:layerMember="1" transform="translate(492.75,-364.5)">
 			<title>Dynamic connector.91</title>
 			<path d="M0 612 L37.91 646.06" class="st11"/>
 		</g>
-		<g id="shape92-236" v:mID="92" v:groupContext="shape" v:layerMember="1" transform="translate(492.75,-268.65)">
+		<g id="shape92-235" v:mID="92" v:groupContext="shape" v:layerMember="1" transform="translate(492.75,-268.65)">
 			<title>Dynamic connector.92</title>
 			<path d="M0 612 L43.68 552.52" class="st11"/>
 		</g>
-		<g id="shape94-241" v:mID="94" v:groupContext="shape" v:layerMember="1" transform="translate(492.75,-175.95)">
+		<g id="shape94-240" v:mID="94" v:groupContext="shape" v:layerMember="1" transform="translate(492.75,-175.95)">
 			<title>Dynamic connector.94</title>
 			<path d="M0 612 L40.76 467.36" class="st11"/>
 		</g>
-		<g id="shape95-246" v:mID="95" v:groupContext="shape" transform="translate(531,-513)">
+		<g id="shape95-245" v:mID="95" v:groupContext="shape" transform="translate(531,-513)">
 			<title>Sheet.95</title>
-			<desc>HDInsight Hadoop MapReduce to pair key and count of TopN words</desc>
+			<desc>Hadoop MapReduce to pair key and count of TopN words</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="45" cy="594" width="90" height="36"/>
 			<rect x="0" y="576" width="90" height="36" class="st12"/>
-			<text x="20.6" y="554.4" class="st13" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>HDInsight<v:newlineChar/><v:newlineChar/><tspan
-						x="25.36" dy="2.4em" class="st5">Hadoop<v:newlineChar/></tspan><tspan x="8.54" dy="1.2em" class="st5">MapReduce to </tspan><tspan
-						x="14.36" dy="1.2em" class="st5">pair key and </tspan><tspan x="9.54" dy="1.2em" class="st5">count of TopN </tspan><tspan
-						x="29.56" dy="1.2em" class="st5">words  </tspan>  </text>		</g>
-		<g id="shape96-254" v:mID="96" v:groupContext="shape" transform="translate(346.5,-153)">
+			<text x="25.36" y="568.8" class="st13" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Hadoop<v:newlineChar/><tspan
+						x="8.54" dy="1.2em" class="st5">MapReduce to </tspan><tspan x="14.36" dy="1.2em" class="st5">pair key and </tspan><tspan
+						x="9.54" dy="1.2em" class="st5">count of TopN </tspan><tspan x="29.56" dy="1.2em" class="st5">words  </tspan>  </text>		</g>
+		<g id="shape96-252" v:mID="96" v:groupContext="shape" transform="translate(346.5,-153)">
 			<title>Sheet.96</title>
 			<desc>Process Z</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="31.5" cy="607.5" width="63" height="9"/>
 			<rect x="0" y="603" width="63" height="9" class="st12"/>
 			<text x="8.76" y="611.1" class="st14" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Process Z</text>		</g>
-		<g id="shape97-257" v:mID="97" v:groupContext="shape" transform="translate(351,-441)">
+		<g id="shape97-255" v:mID="97" v:groupContext="shape" transform="translate(351,-441)">
 			<title>Sheet.97</title>
 			<desc>Process A</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="31.5" cy="607.5" width="63" height="9"/>
 			<rect x="0" y="603" width="63" height="9" class="st12"/>
 			<text x="8.1" y="611.1" class="st14" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Process A</text>		</g>
-		<g id="shape98-260" v:mID="98" v:groupContext="shape" transform="translate(351,-344.25)">
+		<g id="shape98-258" v:mID="98" v:groupContext="shape" transform="translate(351,-344.25)">
 			<title>Sheet.98</title>
 			<desc>Process B</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="31.5" cy="607.5" width="63" height="9"/>
 			<rect x="0" y="603" width="63" height="9" class="st12"/>
 			<text x="8.31" y="611.1" class="st14" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Process B</text>		</g>
-		<g id="shape100-263" v:mID="100" v:groupContext="shape" v:layerMember="2" transform="translate(639,-320.4)">
+		<g id="shape100-261" v:mID="100" v:groupContext="shape" v:layerMember="2" transform="translate(639,-320.4)">
 			<title>Document.100</title>
 			<desc>TopN word count</desc>
 			<v:custProps>
@@ -1101,7 +1099,7 @@
 						 0 609.41 Z" class="st9"/>
 			<text x="7.83" y="591.86" class="st10" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>TopN <tspan x="8.04"
 						dy="1.2em" class="st5">word </tspan><tspan x="7.24" dy="1.2em" class="st5">count</tspan></text>		</g>
-		<g id="shape101-268" v:mID="101" v:groupContext="shape" transform="translate(619.743,-504)">
+		<g id="shape101-266" v:mID="101" v:groupContext="shape" transform="translate(619.743,-504)">
 			<title>Sheet.101</title>
 			<desc>Final Results (Blob)</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
@@ -1109,11 +1107,11 @@
 			<rect x="0" y="576" width="90" height="36" class="st12"/>
 			<text x="13.8" y="590.4" class="st13" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Final Results<v:newlineChar/><tspan
 						x="29.98" dy="1.2em" class="st5">(Blob)</tspan></text>		</g>
-		<g id="shape102-272" v:mID="102" v:groupContext="shape" v:layerMember="1" transform="translate(609.666,-321.75)">
+		<g id="shape102-270" v:mID="102" v:groupContext="shape" v:layerMember="1" transform="translate(609.666,-321.75)">
 			<title>Dynamic connector.102</title>
 			<path d="M0 603 L23.29 603" class="st11"/>
 		</g>
-		<g id="shape103-277" v:mID="103" v:groupContext="shape" v:layerMember="2" transform="translate(218.515,-90)">
+		<g id="shape103-275" v:mID="103" v:groupContext="shape" v:layerMember="2" transform="translate(218.515,-90)">
 			<title>Document</title>
 			<desc>Parameters Top &#60;?&#62;</desc>
 			<v:custProps>
@@ -1145,7 +1143,7 @@
 						 Z" class="st15"/>
 			<text x="4.16" y="587.01" class="st16" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Parameters<v:newlineChar/><tspan
 						x="11.1" dy="1.2em" class="st5">Top &#60;?&#62;</tspan></text>		</g>
-		<g id="shape104-281" v:mID="104" v:groupContext="shape" v:layerMember="2" transform="translate(290.515,-90)">
+		<g id="shape104-279" v:mID="104" v:groupContext="shape" v:layerMember="2" transform="translate(290.515,-90)">
 			<title>Document.104</title>
 			<desc>Stop Words List</desc>
 			<v:custProps>
