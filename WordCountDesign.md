@@ -40,9 +40,9 @@
 	- Test the program with a one or two small files with a short one or two paragraphs and a short list of stop words.
         - Verify the results with manual calculations.. 
 9. **Are there any out of the box patterns, utilities or libraries that you will leverage?**
-	-Pattern	
+	- Pattern	
 		- MapReduce
-	-Libraries
+	- Libraries
 		- org.apache.hadoop.io.*
 		- org.apache.hadoop.mapreduce.*
 		- java.util.*
