@@ -71,6 +71,8 @@
 9. **Are there any out of the box patterns, utilities or libraries that you will leverage?**
 	- Pattern	
 		- MapReduce
+		- Graceful exit through exception handling 
+		- Restart capability through checkpoints
 	- Libraries
 		- java.io.IOException;
 		- java.util.StringTokenizer;
