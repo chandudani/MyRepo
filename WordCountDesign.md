@@ -46,9 +46,9 @@
 		- Removes the trigger file placed by user to stop further processing. 
 5. **How would the programmer and user interact with it? What kind of abstractions would you build?**
 	- Inputs
-		- User will input/specify top N word parameter in the file
-		- User will input/specify "stop" words to be filtered in the stop world list file 
-		- Use will place a trigger file to kick-off the word count process
+		- User will input/specify top N word parameter in the file in a blob storage 
+		- User will input/specify "stop" words to be filtered in the stop world list file in a blob storage 
+		- Use will place a trigger file in a blob storage to kick-off the word count process
 	- Output
 		- An output text file will be created listing top N worlds
 		- User will be notified via an email with the link to the output file 
