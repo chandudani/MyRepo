@@ -27,7 +27,8 @@
 		- Azure Monitor/Application Insights
 		- AzureDevOps/GitHub
 4. **How would those components interact with each other to solve your problems?**
-	-  Wrapper programs (Java based) to invoke various rest API calls to download books from digital library to the blob storage.
+	-  Trigger files placed by the user, initiate programs (Java based) to invoke various rest API calls to download books from digital library to the blob storage.
+	-  After it completes the download, it makes an entry in a database table 
 	-  A PowerShell based Azure function to invoke MapReduce job (Java) on each cluster
 		- Read TopN parameter value from the parameter file
 		- Read and cache Stop word list from the stop word list.
