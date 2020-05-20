@@ -31,24 +31,23 @@
 	-  As it completes each download, it makes an entry in database table serving as the queue to proces the file and monitor file process status.  
 	-  A PowerShell script (Azure function) for each cluster monitoring the queue, pickups next book to process on its clusters and invoke MapReduce job (Java)
 	-  The MapReduce job
-		- Read TopN parameter value from the parameter file
-		- Read and cache Stop word list from the stop word list.
-		- Read data (books) from the blob storage
-		- Filter out the "Stop" word
-		- Generate mapping (Token, count)
-		- Summarize to produce mapping (Token, count) 
-		- Update the local topN count table for its cluster
-		- Update the global table serving as the process monitoring queue
+		- Reads TopN parameter value from the parameter file
+		- Reads and cache Stop word list from the stop word list.
+		- Reads data (books) from the blob storage
+		- Filters out the "Stop" word
+		- Generates mapping (Token, count)
+		- Summarizes to produce mapping (Token, count) 
+		- Updates the local topN count table for its cluster
+		- Updates the global table serving as the process monitoring queue
 		- Deletes the processed file (the book) from the storage
 	- When the final aggregation process, monitoring the global table, detects that there are no more files to process, then 
 		- It invokes program (java based) to read indeterminate results from each cluster's table and produce final results in an output file. 
 		- Sends the email notification to the user with link to the output file. 
-		- Remove the trigger file placed by user to stop further processing. 
+		- Removes the trigger file placed by user to stop further processing. 
 5. **How would the programmer and user interact with it? What kind of abstractions would you build?**
 	- Inputs
 		- User will input/specify top N word parameter in the file
 		- User will input/specify "stop" word to filter in the stop world list file 
-		- An output text file will be created listing top N worlds
 		- Use will place a trigger file to kick-off the word count process.
 	- Output
 		- An output text file will be created listing top N worlds
@@ -59,9 +58,9 @@
 		- Parameterize java program for extracting data using REST API
 		- Provision/Deprovision the platform components, as the code.
 6. **What kind of SLA guarantees you can provide or not to provide?**
-	- Since this a batch data processing and not a real time analysis use case - SLA would be in Day(s)
+	- Since this a batch data processing and not a real time analysis use case - SLA would be in Hours ( could a day or two). 
 	- For more real time analysis needs, we can use spark (with word count program in Scala) instead of MapReduce to speed up computation but it has cost implications. 
-	- Not fit for purpose in this specific use case, but another option is to use hybrid approach also referred as Lambda Architecture.
+	- Although, not applicable in this specific use case, but another option is to use hybrid approach also referred as Lambda Architecture. 
 7. **What enterprise concerns that the platform should address for enterprises like KO to embrace it?**
 	- Cost effective to provision 
 	- Provisioning and Deprovisioning of platform components on demand. 
