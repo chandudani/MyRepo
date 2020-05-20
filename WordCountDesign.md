@@ -58,9 +58,8 @@
 		- Parameterize java program for extracting data using REST API
 		- Provision/Deprovision the platform components, as the code
 6. **What kind of SLA guarantees you can provide or not to provide?**
-	- Since this a batch data processing and not a real time analysis use case - SLA would be in Hours ( could a day or two) 
+	- Since this a batch data processing and not a real time analysis use case - SLA would be in Hours ( could be a day or two) 
 	- For more real time analysis needs, we can use spark (with word count program in Scala) instead of MapReduce to speed up computation but it has cost implications 
-	- Although, not applicable in this specific use case, but another option is to use hybrid approach also referred as Lambda Architecture
 7. **What enterprise concerns that the platform should address for enterprises like KO to embrace it?**
 	- Cost effective to provision 
 	- Provisioning and Deprovisioning of platform components on demand. 
