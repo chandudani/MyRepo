@@ -11,11 +11,10 @@
 	- Given large volume of data, in order to scale, we will do the parallel processing of word count compute.
 	- Synchronization of the parallel compute. 
 	- Compute will be in the batch mode and not in real time.
-	- Simplified architecture with minimum platform components.
 2. **How do you handle such a huge volume of data?**
 	- Store books retrieved from the digital library in separate buckets/partitions for the distributed processing in parallel. 
         - In this case, suggestion is to bucketize using tile starting with 'A',  'B"...'Z' stored on separate storage accounts.
-	- To contain storage cost, store the data files in cheapest storage, compressed. 
+	- Delete file(the book) as soon as it is processed (meaning TopN word count compute for it is done).
 3. **What components such a platform would have?**
 	- Assuming Azure Cloud platform
 		- Blob storage accounts - A to Z.
@@ -23,29 +22,37 @@
 		- Function App Service Plan for hosting 
 			- Data ingestion functions with REST API calls (Java)
 			- Script(s) to invoke HDInsight MapReduce Jobs (PowerShell)
-		- Azure Queue 
+		- Azure Queue to trigger data ingestion functions
+		- Azure SQL or MySQL database to host process monitoring and intermediate results tables for each cluster. 
 		- Azure Monitor/Application Insights
-		- AzureDevOps/GitHub
+		- AzureDevOps/GitHub for the application code.
 4. **How would those components interact with each other to solve your problems?**
-	-  Trigger files placed by the user, initiate programs (Java based) to invoke various rest API calls to download books from digital library to the blob storage.
-	-  After it completes the download, it makes an entry in a database table 
-	-  A PowerShell based Azure function to invoke MapReduce job (Java) on each cluster
+	-  A trigger file placed by the user (with user's email), initiates programs (Java based) to invoke various rest API calls to start download of books in a loop from the digital libraries to the blob storage.
+	-  As it completes each download, it makes an entry in database table serving as the queue to proces the file and monitor file process status.  
+	-  A PowerShell script (Azure function) for each cluster monitoring the queue, pickups next book to process on its clusters and invoke MapReduce job (Java)
+	-  The MapReduce job
 		- Read TopN parameter value from the parameter file
 		- Read and cache Stop word list from the stop word list.
 		- Read data (books) from the blob storage
 		- Filter out the "Stop" word
 		- Generate mapping (Token, count)
-		- Summarize to produce mapping (Token, count) with intermediate results
-		- When compute on all clusters is complete then
-			- Invoke a second driver program (java based) to read indeterminate results and produce final results in an output file. 
+		- Summarize to produce mapping (Token, count) 
+		- Update the local topN count table for its cluster
+		- Update the global table serving as the process monitoring queue
+		- Deletes the processed file (the book) from the storage
+	- When the final aggregation process, monitoring the global table, detects that there are no more files to process, then 
+		- It invokes program (java based) to read indeterminate results from each cluster's table and produce final results in an output file. 
+		- Sends the email notification to the user with link to the output file. 
+		- Remove the trigger file placed by user to stop further processing. 
 5. **How would the programmer and user interact with it? What kind of abstractions would you build?**
 	- Inputs
 		- User will input/specify top N word parameter in the file
 		- User will input/specify "stop" word to filter in the stop world list file 
 		- An output text file will be created listing top N worlds
-		- Use will place a trigger file to kick-off or stop the word count process.
+		- Use will place a trigger file to kick-off the word count process.
 	- Output
 		- An output text file will be created listing top N worlds
+		- User will be notified via an email with the link to the output file. 
 	- Abstractions
 		- Java classes to read & write to/from storage
 		- Parameterize PowerShell scripts to invoke MapReduce job
